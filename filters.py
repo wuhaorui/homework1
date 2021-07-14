@@ -30,7 +30,7 @@ def conv_nested(image, kernel):
 
     ### YOUR CODE HERE
     pass
-    temp_m = np.zeros((Hi+Hk-1, Wi+Wk-1))     # 所得为 full 矩阵
+    temp_m = np.zeros((Hi+Hk-1, Wi+Wk-1))    
     for i in range(Hi+Hk-1):
         for j in range(Wi+Wk-1):
             temp = 0
