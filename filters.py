@@ -34,7 +34,7 @@ def conv_nested(image, kernel):
     for i in range(Hi+Hk-1):
         for j in range(Wi+Wk-1):
             temp = 0
-            # 通常来说，卷积核的尺寸远小于图片尺寸，同时卷积满足交换律，为了加快运算，可用h*f 代替 f*h 进行计算
+            
             for m in range(Hk):
                 for n in range(Wk):
                     if ((i-m)>=0 and (i-m)<Hi and (j-n)>=0 and (j-n)<Wi):
